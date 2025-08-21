@@ -1,0 +1,188 @@
+ 
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        body{
+            background-color: aliceblue;
+            color: rgb(251, 251, 251);
+            overflow: hidden;
+        }
+        .vedio{
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            object-fit: cover;
+            display: flex;
+            justify-items: center;
+            
+            
+            
+
+
+        }
+
+        
+
+            
+
+       
+            
+
+        
+        .center{
+            position: absolute;
+            top: 16.2%;
+            left: 25%;
+            
+            border-radius: 30px;
+            width: 800px;
+            height:80%; 
+            
+
+        }
+        .center:hover{
+            backdrop-filter: blur(2.5px);
+            box-shadow: 0 0 20px 2px;
+            border: 0px solid white;
+            transition-duration: 1s;
+            
+            
+        }
+        .imglogo{
+            position: absolute;
+            top: -44px;
+            left: 41%;
+            z-index: 3;
+        }
+      
+        img{
+            width: 350px;
+            height: 350px;
+            
+            backdrop-filter: blur(1px);
+            transform: scale(0.8);
+
+        }
+        img:hover{
+            transform: translate(10px);
+            transition-duration: 1s;
+            transform: scale(1);
+            filter: drop-shadow(0 0 20px white);
+        }
+        h1{
+            text-align: center;
+            margin-top: 15%;
+            font-size: 70px;
+            font-style: italic;
+            font-family: "Monoton";
+        }
+        h1:hover {
+            transform: translate(10px);
+             transition-duration: 1s;
+             transform: scale(0.95);
+             filter: drop-shadow(0 0 10px);
+        }
+        .one{
+            font-size: 20px;
+            
+            letter-spacing:8px;
+            text-align: center;
+            margin-top:5%;
+            
+
+            
+            
+            
+
+            
+        }
+        .one:hover{
+                        transform: translate(10px);
+             transition-duration: 1s;
+             transform: scale(0.95);
+        }
+        .one1{
+                        
+            box-sizing: border-box;
+            width: 60%;
+            height: 50px;
+            border-radius: 10px;
+            
+
+
+            
+        }
+        .one1:hover{
+            background-color:aqua;
+        }
+        .two{
+        
+            font-size: 20px;
+            letter-spacing: 8px;
+            text-align: center;
+            margin-top:5%;
+    
+            
+        }
+        .two2{
+            width: 60%;
+            height: 50px;
+            border-radius: 10px;
+        }
+        .two:hover{
+                        transform: translate(10px);
+             transition-duration: 1s;
+             transform: scale(0.95);
+        }
+        .two2:hover{
+            background-color: aqua;
+        }
+        button{
+            
+            font-size: 30px;
+            font-family: "Monoton";
+            text-align: center;
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        
+            
+            
+            width: 30%;
+            height: 50px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin-top:10%;
+            margin-left: 35%;  
+    
+            
+        }
+        button:hover{
+                        transform: translate(10px);
+             transition-duration: 1s;
+             transform: scale(0.95);
+             
+             background-color: red;
+                
+        }
+
+        .three{
+
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border: 1px solid black;              
+            
+            
+        }
+        input{
+            padding: 25px;
+        }

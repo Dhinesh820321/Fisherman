@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cart | Fisherman Market</title>
+  <link rel="stylesheet" href="cart.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo"><a href="home.html">Fisherman Market</a></div>
+      <nav class="nav">
+        <a href="home.css">Home</a>
+        <a href="fish.html">Fish</a>
+        <a href="prawn.html">Prawns</a>
+        <a href="cart.html" class="active">Cart</a>
+         <a  class="cat" href="log.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container cart-page">
+    <h1>Your Cart</h1>
+
+    <section class="cart-grid">
+      <!-- Cart items column -->
+      <div class="cart-items">
+
+        <!-- Item 1 -->
+        <article class="cart-item">
+          <img src="https://thumbs.dreamstime.com/b/fresh-seer-fish-king-decorated-herbs-selective-focus-vegetables-black-wooden-pad-254740495.jpg" alt="Seer Fish" class="thumb">
+          <div class="item-info">
+            <h3>Seer Fish — Premium Slices</h3>
+            <p class="meta">Seller: Local Fisherman • Fresh, cleaned</p>
+            <div class="row">
+              <div class="price">₹699 / 500g</div>
+              <label class="qty">
+                Qty (500g)
+                <input type="number" min="1" value="1" />
+              </label>
+              <div class="subtotal">Subtotal: <strong>₹699</strong></div>
+            </div>
+            <div class="actions">
+              <button class="btn ghost">Save for later</button>
+              <button class="btn ghost">Remove</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 2 -->
+        <article class="cart-item">
+          <img src="https://www.aquastar.com/wp-content/uploads/2018/02/Contessa-Black-Tiger-Shrimp-%E2%80%93-Cooked-Peeled-Tail-On-770x450.jpg" alt="Tiger Prawns" class="thumb">
+          <div class="item-info">
+            <h3>Tiger Prawns — Deveined</h3>
+            <p class="meta">Seller: Coastal Catch • Deveined</p>
+            <div class="row">
+              <div class="price">₹699 / 500g</div>
+              <label class="qty">
+                Qty (500g)
+                <input type="number" min="1" value="2" />
+              </label>
+              <div class="subtotal">Subtotal: <strong>₹1,398</strong></div>
+            </div>
+            <div class="actions">
+              <button class="btn ghost">Save for later</button>
+              <button class="btn ghost">Remove</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 3 -->
+        <article class="cart-item">
+          <img src="https://tse3.mm.bing.net/th/id/OIP.SP4jlZ4GhrJsga-MguP54AHaEo?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Blue Crab" class="thumb">
+          <div class="item-info">
+            <h3>Blue Crab — Whole</h3>
+            <p class="meta">Seller: Harbor Harvest • Washed & packed</p>
+            <div class="row">
+              <div class="price">₹750 / Kg</div>
+              <label class="qty">
+                Qty (Kg)
+                <input type="number" min="1" value="1" />
+              </label>
+              <div class="subtotal">Subtotal: <strong>₹750</strong></div>
+            </div>
+            <div class="actions">
+              <button class="btn ghost">Save for later</button>
+              <button class="btn ghost">Remove</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Summary column -->
+      <aside class="summary">
+        <div class="summary-card">
+          <h2>Order Summary</h2>
+
+          <div class="summary-row">
+            <span>Items total</span>
+            <span>₹2,847</span>
+          </div>
+
+          <div class="summary-row">
+            <span>Delivery</span>
+            <span>₹50</span>
+          </div>
+
+          <div class="summary-row">
+            <span>Tax (GST)</span>
+            <span>₹148</span>
+          </div>
+
+          <div class="summary-total">
+            <span>Total</span>
+            <span>₹3,045</span>
+          </div>
+
+          <div class="summary-actions">
+            <a class="btn primary" href="checkout.html">Proceed to Checkout</a>
+            <a class="btn" href="index.html">Continue Shopping</a>
+          </div>
+
+          <p class="note">Note: This is a static demo. Quantity inputs and totals are visual only (no JS/backend).</p>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Fisherman Market • Demo site</p>
+    </div>
+  </footer>
+
+</body>
+</html>

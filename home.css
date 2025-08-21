@@ -1,0 +1,345 @@
+ 
+     
+    *{
+      box-sizing:border-box;
+    }
+    html,body{
+      margin:0;
+    }
+    body{
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
+       color:black;
+        background:#CEEFF3; 
+        line-height:1.5;
+    }
+    a{
+      color:inherit;
+       text-decoration:none;
+    }
+    img{
+      max-width:100%; 
+      display:block;
+    }
+    .container{
+      max-width:1200px;
+       margin-inline:auto; 
+       padding-inline:16px;
+       backdrop-filter: blur(10px);
+    }
+
+   
+    .topbar{
+      background:#0b1220;
+       color:#dbe3ff;
+        font-size:.9rem;
+    }
+    .topbar-inner{
+      display:flex; 
+      gap:12px;
+       align-items:center;
+        justify-content:space-between; 
+        padding:8px 0;
+      }
+    .chip{
+      background:var(--chip); 
+      color:var(--brand-dark);
+       padding:4px 10px; 
+       border-radius:999px; 
+       font-weight:600;
+      }
+
+    
+    header{
+      background:var(--paper); 
+      border-bottom:1px solid #e5e7eb;
+       position:sticky; 
+      top:0; 
+      z-index:50;
+    }
+    .nav{
+      display:grid; 
+      grid-template-columns:170px 1fr auto auto;
+       gap:12px;
+       align-items:center;
+       padding-block:14px;
+
+    }
+    .logo{
+      font-weight:900;
+       letter-spacing:.3px;
+       font-size:1.25rem;
+       color:var(--brand);
+
+    }
+    .search{
+      display:flex; 
+      gap:8px; align-items:center;
+       border:1px solid #e5e7eb;
+       border-radius:12px; 
+      padding:10px 12px
+
+    
+    }
+    .search input{
+      border:0;
+       outline:0; 
+      width:100%;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 14px; 
+      border-radius:12px;
+      border:1px solid #e5e7eb;
+      background:var(--paper); 
+      font-weight:600
+    }
+    .btn.primary{
+      background:green; 
+      color:white;
+       border-color:var(--brand)
+      }
+    .btn.primary:active{
+      transform:translateY(1px);
+    }
+    .cats a:hover{
+      background-color: rgb(46, 152, 233);
+      transform: scaleX(1.5s);
+      
+    
+    }
+
+    
+    .cats{
+      background:var(--paper); 
+      border-bottom:1px solid #e5e7eb
+    }
+   
+    .cat-list{
+      display:flex; 
+      gap:12px;
+       overflow:auto; 
+       padding:10px 0;
+      }
+
+    .cat{
+      padding:8px 14px;
+       border-radius:999px;
+        border:1px solid #e5e7eb;
+         white-space:nowrap
+      }
+    .cat.active{
+      background:var(--brand);
+       color:#fff; 
+       border-color:var(--brand)
+      }
+
+   
+    .hero{
+      background:linear-gradient(135deg,#e8fff0, #f3f7ff);
+    }
+    .hero-wrap{
+      display:grid; 
+      grid-template-columns:1.2fr .8fr;
+      gap:24px; 
+      padding:28px 0;
+       align-items:center;
+    }
+    .hero h1
+    {
+      margin:0 0 8px; 
+      font-size:clamp(1.6rem, 4vw, 2.4rem)
+    }
+    .hero p
+    {
+      margin:0; 
+      color:var(--muted)
+    }
+    .hero-card
+    {
+      background:var(--paper);
+       border:1px solid #e5e7eb; 
+       border-radius:16px;
+        padding:16px;
+      }
+
+    
+    section{
+      padding-block:22px;
+    }
+    .section-title{
+      display:flex;
+       align-items:baseline;
+        justify-content:space-between; 
+        margin-bottom:12px;
+      }
+    .section-title h2{
+      margin:0;
+       font-size:1.25rem;
+      }
+    .grid{
+      display:grid; 
+      grid-template-columns:repeat(4,1fr);
+      gap:16px;
+    }
+    @media (max-width:1024px){
+      .grid{grid-template-columns:repeat(3,1fr)}
+    }
+    @media (max-width:760px){
+      .nav{
+        grid-template-columns:1fr;
+         gap:10px;
+        }
+          .grid{
+            grid-template-columns:repeat(2,1fr)
+        } 
+        .hero-wrap{
+          grid-template-columns:1fr
+        }
+      }
+
+  
+    .card{
+      background:var(--paper); 
+      border:1px solid #e5e7eb;
+       border-radius:16px; 
+       overflow:hidden;
+        display:flex; 
+        flex-direction:column
+      }
+    .thumb{
+      aspect-ratio:4/3; 
+      background:url(https://thumbs.dreamstime.com/b/fresh-seer-fish-king-decorated-herbs-selective-focus-vegetables-black-wooden-pad-254740480.jpg) no-repeat; 
+      background-size: contain;
+      display:flex; 
+      align-items:flex-end;
+       justify-content:flex-start;
+        padding:10px;
+      }
+    .badge{
+      background:var(--brand); 
+      color:#fff; 
+      padding:4px 8px;
+       border-radius:8px;
+        font-size:.75rem;
+         font-weight:700
+        }
+    .card-body{
+      padding:12px
+    }
+    .title{
+      font-weight:700; 
+      margin:0 0 2px
+    }
+    .sub{
+      
+      color:var(--muted); 
+      font-size:.9rem; 
+      margin:0 0 8px
+    }
+    .stars{
+      font-size:.9rem; 
+      color:#f59e0b
+    }
+    .pack{
+      display:flex; 
+      gap:8px; 
+      margin:10px 0
+    }
+    .chip-opt{
+      padding:6px 10px;
+       border-radius:10px;
+       border:1px solid #e5e7eb
+      }
+    .price{
+      font-weight:800;
+       font-size:1.1rem;
+       margin-top:auto
+      }
+    .cta{
+      display:flex;
+       gap:8px;
+       margin-top:10px
+      }
+    .cta .btn{
+      flex:1; 
+      text-align:center
+    }
+
+    /* Fisherman Upload (anchor target) */
+    #upload{
+      scroll-margin-top:80px
+    }
+    .form{
+      background:var(--paper);
+       border:1px solid #e5e7eb; 
+      border-radius:16px; 
+      padding:16px; 
+      max-width:760px
+    }
+    .row{
+      display:grid; 
+      grid-template-columns:1fr 1fr; 
+      gap:12px
+    }
+    .row-1{
+      display:grid; 
+      grid-template-columns:1fr;
+       gap:12px
+    }
+    label{
+      font-weight:700; 
+      font-size:.92rem
+    }
+    input, select, textarea{
+      width:100%;
+       padding:10px 12px;
+       border-radius:10px;
+       border:1px solid #e5e7eb; 
+      outline:0
+    }
+    input:focus, select:focus, textarea:focus{
+      border-color:var(--brand); box-shadow:0 0 0 4px var(--ring)
+    }
+    textarea{
+      min-height:100px; 
+      resize:vertical
+    }
+
+    /* Footer */
+    footer{
+      margin-top:24px;
+       background:#0b1220;
+       color:#cbd5e1
+    }
+    .foot{
+      display:grid;
+       grid-template-columns:2fr repeat(3,1fr); 
+      gap:16px; 
+      padding:28px 0;
+    }
+    .foot h4{
+      margin:0 0 10px;
+    }
+    .space{
+      text-align: center;
+      margin-bottom: 10px---;
+    }
+    .pa4{
+     margin: 20px;
+    }
+    .copyright{
+      border-top:1px solid #1f2937;
+       padding:12px 0;
+       text-align:center;
+       color:#9aa6b2
+    }
+    .hide-mobile{
+      display:block;
+    }
+    @media (max-width:760px){
+      .hide-mobile{
+      display:none
+    }
+    }

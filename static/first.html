@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Monoton&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <style>
+        body{
+
+        }
+            
+        
+        
+
+        a{
+            
+            text-decoration: none;
+            color: black;
+           
+
+           
+        }
+        #a1:hover, #a2:hover,#a3:hover,#a4:hover,#a5:hover{
+
+            background-color: #00b4d8;
+            border-radius: 5px;
+            transition-duration: 2s;
+        }
+
+        li{
+            
+        
+            list-style-type: none;
+            color: black;
+            
+            
+            
+            
+
+        }
+        ul{
+        
+            
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+        
+        .main1{
+            position: sticky;
+            top: 0px;
+            left:0px;
+            z-index: 3;
+            width: 99.8%;
+            height: 80px;
+            border: 1px solid black;
+            border-radius: 20px;
+            backdrop-filter: blur(100px);
+            box-shadow: 0px 0px 30px 1px;
+            font-size: 20px;
+            
+        }
+        input{
+            width: 150%;
+            height: 30px;
+            border-radius: 20px;
+            padding: 5px;
+            
+        }
+        button{
+            position: absolute;
+            top:40%;
+            left: 34.5%;
+            width: 3%;
+            height: 5%;
+            border-radius: 10px;
+            background: none;
+            border:none;   
+        }
+            .open{
+            
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 30px;
+            color: rgb(228, 24, 24);
+            cursor: pointer;
+
+        }
+        #popup{
+            display: none;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            
+            
+        }
+         #popup:target{ 
+            display: flex;
+         } 
+        .popup-content{
+            
+            position: absolute;
+            top: 11%; 
+            left: 0px; 
+            line-height: 90px; 
+            text-align: center;
+            width: 250px;
+            height: 450px;
+            border: 1px solid black;
+            border-radius: 20px;
+            background-color: #000000;
+            
+            
+
+
+        }
+        .popup-content:hover{
+            transform: translate(10px);
+            transition-duration: 2s;
+        }
+        
+        .close{
+            position:absolute;
+            top:-10px;
+            left: 20px;
+            
+           
+        }
+        
+        #cls11{
+            color: whitesmoke;
+            font-variant-caps: titling-caps;
+            
+            
+            
+            
+            
+            
+
+        }
+        #cls11:hover{
+            border-bottom: 4px solid red;
+            border-radius: 2px;
+            transform: translateX(150px);
+            transition-duration: 1s;
+            
+        
+
+        }
+        .icon{
+            z-index:-1;
+            position: absolute;
+            left:0px;
+            top:34px;
+            width: 20px;
+            height: 30px;
+            color: red;
+        }
+         
+            
+         
+          
+
+         
+
+         
+        img{
+            z-index:-1;
+            position: relative;
+            top: -84px;
+            left: 0px;
+            width: 100%;
+            height: 80vh;
+            border: 1px solid rgb(213, 0, 0);
+            box-shadow:0px 0px 20px 10px ;
+        
+            
+
+        }
+        
+            
+
+        h2{
+            z-index: -1;
+            position: absolute;
+            top: 120px;
+            left: -50px;
+            border:1px solid black;
+            border-radius:20px;
+            box-shadow: 0px 0px 20px 2px;
+            width: 800px;
+            height: 400px;
+            backdrop-filter: blur(50px);
+        }
+       
+        h1{
+            z-index: -1;
+            position: absolute;
+            top: 130px;
+            left: 50px;
+            font-size: 55px;
+            font-style: italic;
+            box-shadow: 0px 0px 30px;
+            box-shadow: none;
+        
+        }
+        h1:hover{
+            transform: translateX(1px);
+            transition-duration: s;
+        }
+        .fisher,img{
+            position: absolute;
+            border: none;
+            box-shadow: none;
+            
+            
+        }
+        #boat{
+            position: absolute;
+            top: 184px;
+            left: 320px;
+            width: 500px;
+            height: 250px;
+            
+
+        }
+        #boat:hover{
+             transform: translate(-800px);
+            transition-duration: 10s;
+            
+            
+        }
+        .sub2{
+            
+            position:absolute;
+            top: 75%;
+            left: 30px;
+
+        }
+        .v2{
+            position: relative;
+            top: 0px;
+            left: -30px;
+            width: 99vw;
+            height: 30%;
+            border: 0px solid whitesmoke;
+            border-radius: px;
+            box-shadow: 0px 0px 20px 1px;
+        }
+        .para{
+            position: absolute;
+            top: 30px;
+            left: 5%;
+            border: px solid rgb(0, 0, 0);
+            color: rgb(250, 250, 250);
+            box-shadow: 0px 0px 10px;
+            border-radius:10px;
+            font-size: xx-large;
+            font-style: italic;
+         font-variant-caps:titling-caps;
+            line-height: 50PX;
+            letter-spacing: 5px;
+            text-align: center;
+            width: 85vw;
+            height: 75%;  
+
+        }
+        .main11{
+            z-index: -1;
+            position: absolute;
+            top: 140%;
+            left: 0px;
+            width: 99vw;
+            height: 40vh;
+            border: 2px solid rgb(242, 219, 219);
+            background-color: black;
+            
+
+        }
+        .pa1{
+            color: whitesmoke;
+            text-align: center;
+            font-size: xx-large;
+            margin-left:40%;
+            line-height: 70px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .sub11{
+            z-index:1;
+
+            position: absolute;
+            top: 1%;
+            left: -20px;
+            width: 40vw;
+            height: 39vh;
+            border: 1px solid whitesmoke;
+            border-radius: 30px;
+            box-shadow: 0px 0px 10px 1px;
+            color: whitesmoke;
+            opacity: 10px;
+        }
+        .sub11:hover{
+            transform: translate(30px);
+            transition-duration: 2s;
+            transform: scalex(-1);
+            transition-duration: 2s;
+        }
+            .main22{
+        
+            position: absolute;
+            top: 189%;
+            left: 0px;
+            width: 99vw;
+            height: 40vh;
+            border: 2px solid rgb(242, 219, 219);
+            background-color: black;
+        }
+        .pa2{
+            text-align: center;
+            color: whitesmoke;
+            margin-left: 40%;
+            font-size: xx-large;
+            line-height: 80px;
+        }
+                .sub22{
+            z-index:1;
+
+            position: absolute;
+            top: 1%;
+            left: -20px;
+            width: 40vw;
+            height: 39vh;
+            border: 1px solid whitesmoke;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px 1px;
+            color: whitesmoke;
+        }
+        .sub22:hover{
+            transform: translate(30px);
+            transition-duration: 2s;
+            transform: scalex(-1);
+            transition-duration: 2s;
+        }
+                    .main33{
+
+            position: absolute;
+            top: 239%;
+            left: 0px;
+            width: 99vw;
+            height: 40vh;
+            border: 2px solid rgb(242, 219, 219);
+            background-color: black;
+        }
+        .pa3{
+            color: whitesmoke;
+            align-items: center;
+            margin-left: 45%;
+            font-size: xx-large;
+            line-height: 60px;
+        }
+            .sub33{
+            z-index:1;
+
+            position: absolute;
+            top: 1%;
+            left: -20px;
+            width: 40vw;
+            height: 39vh;
+            border: 1px solid whitesmoke;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px 1px;
+            color: whitesmoke;
+        }
+        .sub33:hover{
+            transform: translate(30px);
+            transition-duration: 2s;
+            transform: scalex(-1);
+            transition-duration: 2s;
+        }
+        footer{
+            position:absolute;
+            top: 285%;
+            left:0px;
+            width:100vw;
+            height: 30%;
+            border: 2px solid black;
+            background-color: black;
+        }
+        .pa4{
+            display:flex;
+            justify-content:space-evenly;
+            align-items: center;
+            margin-top: 100px;
+            color: whitesmoke;
+           
+        }
+ 
+
+    </style>
+</head>
+<body>
+    <div class="main1">
+            <ul>
+        <div class="icon">
+        </div>
+        <a href="#popup" class="open"><i class="fa-solid fa-water fa-2xl" style="color: black;"></i></a>
+    <div id="popup">
+        <div class="popup-content">
+        <a href="#" class="close" ><i class="fa-solid fa-xmark fa-2xl" style="color: rgb(218, 218, 218);"></i></a>
+        <li><a href="first.html" id="cls11">Home</a></li>
+        <li><a href="fisherman.html" id="cls11">Fisher Man</a></li>
+        <li><a href="" id="cls11">Restaurent</a></li>
+        <li> <a href="" id="cls11">My Order</a></li>
+        <li><a href="login.html" id="cls11">Login</a></li>
+
+        </div>
+    </div>
+         <li><a href=""><input type="text" placeholder="search"> <button><i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #000000;"></i></button></a></li> 
+        
+         <li><a href="first.html" id="a1">Home</a></li> 
+         <li><a href="fisherman.html" id="a2">Fisher Man</a></li> 
+         <li><a href="" id="a3">Restaurent</a></li> 
+         <li><a href="" id="a4">My Order</a></li> 
+         <li><a href="login.html" id="a5">Login</a></li> 
+    
+     </ul> 
+     </div>
+    <div class="sub1">
+        <img src="fishman7.jpg" alt="img">
+        <h2><img src="seafish-Photoroom.png" alt="img" id="boat" ></h2>
+        <h1>SEA FISH <p style="">morning 5<sup>O</sup>clock to 10 <sup>O</sup>clock</p></h1>
+        
+       
+    </div>
+    <div class="sub2">
+        <video src="sub2vedio.mp4"  class="v2"  autoplay loop muted >
+        </video>
+        <p class="para">Sea Fish Are An Important Source Of Food , Rich In Protein , Vitamins, Minerals. They Live In Saltwater Environments Such <br>As Oceans And Seas , And Include Popular Varieties Like Tuna, <br>Mackeral , Sardines , And Pomfret.Apart From Their Nutritional. <br>Sustainable Fishing Helps Maintain Helthy Ocean Life While <br>Providing Delicious Sea Food For People Around The World... 
+        </p>
+
+    </div>
+    <div class="main11"><img class="sub11" src="fron2.jpg" alt="img">
+        <p class="pa1">Every day , fisherman head out into the deep <br> blue waters to bring you freshest , tastiest <br> sea food. from the net to your plate , we ensure <br> top quality and natural flavour</p>
+    </div>
+    <div class="main22"><img class="sub22" src="front5.jpg" alt="img">
+        <p class="pa2">post your catch of the day with photos and prices <br>sell directly to restaurants , eleminating middlemen <br>get paid faster and build long term buyer relationships</p>
+        class="pa2">fisher man struggle to face this problems </p>
+    </div>
+    <div class="main33"><img class="sub33" src="chif.webp" alt="img">
+        <p class="pa3">browse fresh fish listing posted daily by verified fisherman <br>order in bulk or select special catches for your menu <br>enjoy guarenteed freshness and timely delivery straight <br> from the source.</p>
+    </div>
+    <footer>
+        <p class="pa4"><a class="pa4" href="https://mail.google.com/mail/?view=cm&fs=1&to=dhineshkamadasan@gmail.com">Email:dhineshkannadasan@gmail.com<i class="fa-regular fa-envelope fa-2xl" style="color: #ffffff;"></i></a></a><a class="pa4" href="https://wa.link/a60lsm">whatsapp:9865314356<i class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff;"></i></a><a class="pa4" href="https://www.google.com/maps/place/Mayiladuthurai,+Tamil+Nadu+609001/@11.1017701,79.6422689,15z/data=!3m1!4b1!4m6!3m5!1s0x3a5526c731f25c21:0x4339eccad0b5866a!8m2!3d11.1017705!4d79.6525686!16zL20vMDJmam5z?entry=ttu&g_ep=EgoyMDI1MDgxMS4wIKXMDSoASAFQAw%3D%3D">Location:Mayiladuthurai<i class="fa-solid fa-location-dot fa-2xl" style="color: #ffffff;"></i></a>
+        <a class="pa4" href="https://www.instagram.com/dhinesh_skr/">Instagram: <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i></a> 
+        <a class="pa4" href="https://www.linkedin.com/in/dhinesh-k-31887429b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkdln: <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i></a></p>
+    </footer>
+</body>
+</html>

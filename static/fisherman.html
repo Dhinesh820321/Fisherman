@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="all.min.css">
+    <style>
+        a{
+            
+            text-decoration: none;
+            color:black;
+        
+            
+            
+            
+        }
+        li,a:hover{
+            color:#00b4d8;
+            transform: scale(1.4);
+            border-bottom:1px solid red ;
+            border-top: 1px solid red ;
+            border-right:3px solid red;
+            border-radius: 5px;
+            padding-right: 4px;
+            box-shadow: 0px 0px 9px black;
+                       
+        
+        }
+        
+
+        nav{
+            display: flex;
+            justify-content:space-evenly;
+            align-items:center;
+            position: relative;
+            top: 10px;
+            left: 10px;
+
+
+        }
+        
+            
+        
+    
+
+        li{
+            
+            list-style: none;
+
+    
+
+            
+            
+        }
+        span{
+            z-index: 2;
+            position: absolute;
+            top:25px;
+            left:0px;
+            
+            
+
+        }
+        nav a:hover:nth-child(1)~span{
+            left:140px;
+            transition-duration:2s;
+            
+            
+        }
+         nav a:hover:nth-child(2)~span{
+            left:370px;
+            transition-duration:1S;
+            
+        }
+         nav a:hover:nth-child(3)~span{
+            left:650px;
+            transition-duration:1S;
+            
+        }
+         nav a:hover:nth-child(4)~span{
+            left:920px;
+            transition-duration:1S;
+            
+        }
+        nav a:hover:nth-child(5)~span{
+            left: 1190px;
+            transition-duration:1s;
+        }
+        
+        .main1{
+            z-index:1;
+            position:sticky;
+            top:0px;
+            left:0px;
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            border: 0.1px solid rgb(244, 242, 242);
+            border-radius: 20px;
+            box-shadow: 0px 0px 50px black;
+            backdrop-filter:blur(100px);
+            box-shadow: 0px 0px 200px 1px;
+            width: 98vw;
+            height: 8vh; 
+            font-size: 17px;   
+            
+        }
+        .main2{
+            position:absolute;
+            top:0px;
+            left:0px;
+            width: 100vw;
+            height: 70vh;
+            
+        }
+        .main3{
+            position:relative;
+            top:62vh;
+            left:-10vw;
+            width: 110vw;
+            height: 30vh;
+            border: 1px solid black;
+            background-color: #00b4d8;
+            
+           
+            
+        }
+       .para,p{
+        margin-left: 150px;
+        font-size: 17px;
+        line-height: 40px;
+       }
+       .main4{
+        position: relative;
+        top:70vh;
+        left:0vw;
+        width: 60vw;
+        height: 40vh;
+        border: 2px solid black;
+        
+
+       }
+       .sub4,img{
+        width: 20vw;
+        height: 40vh;
+       }
+      
+       
+        
+
+       
+       
+           
+        
+        
+        
+
+    </style>
+</head>
+<body>
+    
+    <nav>
+    <div class="main1">
+        
+        <a href="first.html">Home</a>
+        <a href="fisherman.html">Fisher Man</a>
+        <a href="">Restaurant</a>
+        <a href="">My Order</a>
+        <a href="login.html">Login</a>
+        <span><i class="fa-solid fa-fish-fins fa-2xl" style="color: #000000;"></i></span>
+    </div>
+</nav>
+<div class="main2">
+    <img class="main2"src="fishman5.jpg" alt="img">
+</div>
+
+<div class="main3">
+    <div class="para">
+        <h1>About <br>Fisherman</h1>
+        
+        <p>Fisherman is trusted platform that brings together local fisherman and restaurant.Every catch sourced fresh from the sea,ensuring quality,taste,and suatainability.our mission is to support fisherman <br>while providing customers with the freshest seafood at the best price.</p>
+    
+    </div>
+    </div>
+    <div class="main4">
+        <div class="sub4"><img src="fishman.jpg" alt="img">
+            <ul><li> <ul class="unorder">
+                <li class="list">list your daily fresh catch easily</li>
+                <li class="list">Get direct restaurant buyers without middlemen</li>
+                <li class="list">Earn fair value for your hard work</li>
+                <li class="list">Build long term partnerships with trusted buyers</li>
+            </ul></li></ul>
+        </div>
+    </div>
+
+    
+        
+
+
+
+
+    
+    
+     
+  
+
+    
+    
+
+    
+</body>
+</html>
